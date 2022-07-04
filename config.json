@@ -1,9 +1,0 @@
-{
-	"name": "eons/img_webserver",
-	"from": "ubuntu:latest",
-	"os": "debian",
-	"install": [
-		"gcc",
-		"openssl"
-	]
-}

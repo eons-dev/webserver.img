@@ -4,9 +4,9 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = https://github.com/eons-dev/part_docker-workflows.git
+	remote = https://github.com/eons-dev/part_ebbs-workflows.git
 	branch = main
-	commit = d2872a8fe88d10eb6da2c5ca3da71513b83d42c7
-	parent = 331be444ded24b6556f9db0fa3da481f0162991c
+	commit = 140a35aca310b63608e38f10eebe1f5be0f4b27a
+	parent = 3d00811b2d419c24ffab911d07f51c63b3989ef4
 	method = merge
 	cmdver = 0.4.3

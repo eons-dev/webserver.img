@@ -1,0 +1,34 @@
+{
+    "name": "webserver",
+    "type": "img",
+    "build_in": "github",
+    "clear_build_path": true,
+    "next":
+    [
+        {
+            "build": "docker",
+            "run_when": [
+            	"release"
+            ],
+            "copy" : [
+              {"../../lib/" : "lib/"},
+              {"../../inc/" : "inc/"},
+              {"../../src/" : "src/"}
+            ],
+            "config":
+            {
+                "base_image": "eons/img_base",
+                "image_name": "eons/img_webserver",
+                "image_os": "debian",
+                "install":
+                [
+                    "gcc",
+					"openssl"
+                ],
+                "tags" : [
+                    "latest"
+                ]
+            }
+        }
+    ]
+}
