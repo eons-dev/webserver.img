@@ -11,15 +11,19 @@
             	"release"
             ],
             "copy" : [
-              {"../../lib/" : "lib/"},
-              {"../../inc/" : "inc/"},
-              {"../../bin/" : "bin/"}
+              {"../../inc/" : "inc/"}
             ],
             "config":
             {
                 "base_image": "eons/img_base",
                 "image_name": "eons/img_webserver",
                 "image_os": "debian",
+                "emi": {
+                    "install": [
+                        "cpr",
+                        "restbed"
+                    ]
+                },
                 "install":
                 [
                     "gcc",
