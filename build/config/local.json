@@ -1,17 +1,13 @@
 {
-    "name": "webserver",
-    "type": "img",
-    "build_in": "github",
-    "clear_build_path": true,
     "next":
     [
         {
             "build": "docker",
-            "run_when": [
+            "run_when_any": [
             	"release"
             ],
             "copy" : [
-              {"../../inc/" : "inc/"}
+              {"../../../inc/" : "inc/"}
             ],
             "config":
             {
